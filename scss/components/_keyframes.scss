@@ -1,0 +1,64 @@
+@keyframes single-thunder {
+    0% {opacity:  0;}
+    49% {opacity: 0;}
+    50% {opacity: 1;}
+    51% {opacity:  0;}
+    52% {opacity: 1;}
+    53% {opacity:  0;}
+    54% {opacity: 1;}
+    74% {opacity: 1;}
+    75% {opacity: 0;}
+    76% {opacity:  1;}
+    90% {opacity: 1;}
+    91% {opacity: 0;}
+    92% {opacity: 1;}
+    93% {opacity: 0;}
+    94% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes blade-light {
+    0% {transform:rotate(0);}
+    50% {transform:rotate(-180deg);}
+    100% {transform:rotate(-359deg);}
+}
+
+@keyframes blade-light-scale {
+    0% {opacity:0;transform:scale(0,0);}
+    15% {opacity:0;transform:scale(0,1.5);}
+    18% {opacity:1;transform:scale(1,2);}
+    38% {opacity:1;transform:scale(2,3);}
+    53% {opacity:1;transform:scale(1,2);}
+    57% {opacity:0;transform:scale(0,1.5);}
+    100% {opacity:0;transform:scale(0,0);}
+}
+
+@keyframes single-thunder-scale {
+    0% {opacity:  0;transform:scale(0)}
+    49% {opacity: 0;transform:scale(0)}
+    50% {opacity: 1;transform:scale(1)}
+    51% {opacity:  0;transform:scale(1)}
+    52% {opacity: 1;transform:scale(1)}
+    53% {opacity:  0;transform:scale(1)}
+    54% {opacity: 1;transform:scale(1)}
+    74% {opacity: 1;transform:scale(1)}
+    75% {opacity: 0;transform:scale(1)}
+    76% {opacity:  1;transform:scale(1)}
+    90% {opacity: 1;transform:scale(1)}
+    91% {opacity: 0;transform:scale(1)}
+    92% {opacity: 1;transform:scale(1)}
+    93% {opacity: 0;transform:scale(1)}
+    94% {opacity: 1;transform:scale(1)}
+    100% {opacity: 0;transform:scale(1)}
+}
+
+@keyframes thunder-sky {
+    0% {opacity: 0;}
+    49% {opacity: 0;}
+    50% {opacity: 1;}
+    51% {opacity: 0.8;}
+    52% {opacity: 1;}
+    53% {opacity: 0.8;}
+    54% {opacity: 1;}
+    100% {opacity: 0;}
+}

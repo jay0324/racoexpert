@@ -1,0 +1,62 @@
+.ag-lightning {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .light{
+      position:absolute;
+      width: 100%;
+      height: 100%;
+      &:before, &:after{
+        content: "";
+        opacity: 1;
+        will-change: transform;
+        position: absolute;
+      }
+
+      &:before{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/lightning-1.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        animation: an-lightning-first 1s linear 1s infinite;
+      }
+
+      &:after{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/lightning-1.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+        animation: an-lightning-second 1s linear 1s infinite;
+      }
+    }
+
+}
+
+@keyframes an-lightning-first {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+@keyframes an-lightning-second {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}

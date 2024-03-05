@@ -1,161 +1,62 @@
 <!DOCTYPE html>
-<html lang="en" class="loading">
+<html lang="en" class="lock-scroll">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index</title>
     <link rel="stylesheet" href="https://cdnresource.gtmc.app/gtfonts/VT323/font-face.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
-<body class="loading">
 
-    <div id="loader">
-        <div id="meter">
-            <canvas width="100" height="100" id="circle"></canvas>
-            <div id="tasks">
-                <span id="complete">0</span>/</span><span id="total">0</span> Resources Loaded
-            </div>
-        </div>
-    </div>
+<body class="lock-scroll">
 
-    <img id="bg" src="img/bg.jpg" alt="">
+    <section class="b-section b-index-section-3">
+        <div class="b-section-content">
+            <div class="b-wrap">
+                <div class="b-article">
+                    <div class="b-edit__wrap ">
+                        <!-- index pop -->
+                        <div id="overlay" class="overlay">
+                            <div class="overlay-content">
+                    
+                                <div class="pcMachine-wraper pannel-wraper">
+                                    <img class="pcMachine" src="img/index/machine.png" />
+                                    <img class="close-pannel-btn btn-normal" src="img/index/close.png" />
+                                    <img class="show-page-btn btn-normal" data-url="story.html" src="img/index/play.png" />
+                                </div>
 
-    <div id="bg_top">
-        <img src="img/bg_top.jpg" class="top thumder_sky" />
-        <img src="img/bg_top_2.jpg" class="thumder_sky" />
-    </div>
+                                <div class="mbMachine-wraper pannel-wraper">
+                                    <img class="mbMachine" src="img/index/machine2.png" />
+                                    <img class="close-pannel-btn btn-normal" src="img/index/close.png" />
+                                    <img class="show-page-btn btn-normal" data-url="story.html" src="img/index/play.png" />
+                                </div>
 
-    <div id="mask"></div>
+                            </div>
+                        </div>
 
-    <div id="storyBlock1" class="area">
-        <div class="storyWrap">
-            <div class="info">
-                <div class="dash-gap"> 
-                    <span class="text">Information</span> 
+                        <div id="content" class="content">
+                            <div class="container">
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div> /From the moment a person </div>
-                <div>/stands upright and frees his hands, </div>
-                <div> /he controls his own destiny.... </div>
-                <br>
-                <div> /Tools are an extension of humanity, </div>
-                <div> /from the beginning to the end. </div>
-                <div class="dash-gap"></div>
             </div>
         </div>
-    </div>
-    
-    <div id="since_1" class="area">
-            <img src="img/gorilla_hand.png" id="gorilla_hand">
-            <img src="img/robot_hand.png" id="robot_hand">
-            <img src="img/tool.png" id="tool">
-            <div id="lightning" class="ag-lightning">
-                <div id="light-1" class="light"></div>
-                <div id="light-2" class="light"></div>
-                <div id="light-3" class="light"></div>
-            </div>
-    </div>
+    </section>
 
-    <div id="storyBlock2" class="area">
-        <div class="storyWrap">
-            <div class="info">
-                <div class="dash-gap"></div>
-                <div>/The RACO family are provocateurs</div>
-                <div> /rebels</div>
-                <div> /rule breakers.</div>
-                <br>
-                <div> /Only one thinghas been held</div>
-                <div>/for hundreds of years...</div>
-                <div class="dash-gap"></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="since_2" class="area">
-        <img src="img/anna.png" id="anna">
-        <img src="img/Q.png" id="Q">
-        <img src="img/land.png" id="land">
-        <div id="snow"></div>
-    </div>
-
-    <div id="storyBlock3" class="area">
-        <div class="storyWrap">
-            <div class="info">
-                <div class="dash-gap"></div>
-                <div>/Make something </div>
-                <div>/that surpasses everyone </div>
-                <div> /and handle any situation </div>
-                <div class="dash-gap"></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="since_3" class="area">
-        <img src="img/africa_smith.png" id="africa_smith">
-        <img src="img/smith.png" id="smith">
-        <img src="img/doctor.png" id="doctor">
-        <canvas id="spark"></canvas>
-        <canvas id="fire"></canvas>
-    </div>
-
-    <div id="storyBlock4" class="area">
-        <div class="storyWrap">
-            <div class="info">
-                <div class="dash-gap"></div>
-                <div>/can be used for a lifetime </div>
-                <div class="dash-gap"></div>
-            </div>
-        </div>
-    </div>
-
-    <div id="since_4" class="area">
-        <div id="text_1">
-            <div class="content">
-                <div>Our Tools</div>
-                <div>are made for This </div>
-            </div>
-        </div>
-
-        <div id="lightning_small_wraper_left">
-            <img src="img/lightning.png" class="top_light lightning_effect">
-            <img src="img/lightning.png" class="lightning_effect">
-        </div>
-
-        <div id="lightning_small_wraper_right">
-            <img src="img/lightning.png" class="top_light lightning_effect">
-            <img src="img/lightning.png" class="lightning_effect">
-        </div>
-
-        <img src="img/lou.png" id="lou">
-
-        <img src="img/blade.png" id="blade">
-
-        <div id="bladeLight"></div>
-
-        <img src="img/lightning.png" id="lightning">
-
-        <img src="img/lightning.png" id="lightning2">
-
-        <div id="text_2">
-            <div class="content">
-                <div>Be THE ONE</div>
-            </div>
-        </div>
-    </div>
-
-    <div id="storyBlock5" class="area">
-        <div id="logo"><img src="img/storylogo.svg"></div>
-        <div id="backBTN"><a href="https://demo-racoexpert.gtmc.app/en">GO</a></div>
-    </div>
+    <section class="content2">
+        <div>Start</div>
+        <div>End</div>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <script src="js/ShaderProgram.js"></script>
     <script src="js/index.js" async></script>
 </body>
+
 </html>

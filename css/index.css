@@ -238,6 +238,11 @@
     opacity: 0;
   }
 }
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background: #000;
   font-family: "VT323", monospace;
@@ -320,7 +325,7 @@ body.loading {
   top: 0;
   animation: thunder-sky 5s linear 1s infinite;
   opacity: 0;
-  filter: blur(1px);
+  filter: blur(0.1vw);
 }
 #bg_top .thumder_sky.top {
   animation: thunder-sky 10s linear 5s infinite;
@@ -464,20 +469,6 @@ body.loading {
   width: 100%;
   z-index: 1;
 }
-#since_3 #spark {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  z-index: 2;
-}
-#since_3 #spark img {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  filter: blur(10px);
-}
 #since_3 #doctor {
   position: absolute;
   right: 0;
@@ -488,11 +479,11 @@ body.loading {
 }
 #since_3 #fire {
   position: absolute;
-  top: 0vw;
-  right: -15vw;
+  top: 36vw;
+  right: 2vw;
   z-index: 2;
-  width: 100%;
-  transform: scale(1.2, 0.15) rotateY(180deg);
+  width: 80vw;
+  height: 25vw;
 }
 #since_3 #spark {
   transform-origin: top;
@@ -552,11 +543,12 @@ body.loading {
 #since_4 #blade {
   position: absolute;
   top: 35vw;
-  right: 8vw;
+  right: 7vw;
   z-index: 1;
   width: 60%;
   transform-origin: center;
-  filter: blur(10px);
+  opacity: 0.9;
+  filter: blur(0.3vw);
 }
 #since_4 #bladeLight {
   position: absolute;
@@ -577,7 +569,7 @@ body.loading {
   left: 0;
   border-radius: 50%;
   transform: scale(1, 2);
-  filter: blur(13px);
+  filter: blur(1vw);
   animation: blade-light-scale 6s linear 1s infinite;
 }
 #since_4 #lightning {
@@ -585,7 +577,7 @@ body.loading {
   bottom: 47.8vw;
   z-index: 1;
   width: 100%;
-  filter: blur(2px);
+  filter: blur(0.1vw);
   opacity: 0;
   animation: single-thunder 10s linear 1s infinite;
 }
@@ -594,7 +586,7 @@ body.loading {
   bottom: 40vw;
   z-index: 1;
   width: 100%;
-  filter: blur(2px);
+  filter: blur(0.1vw);
   opacity: 0;
   animation: single-thunder 6s linear 5s infinite;
   transform: rotateZ(170deg);

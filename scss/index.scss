@@ -17,10 +17,10 @@ body{
     line-height: 4vw;
     letter-spacing: 4px;
     overflow-x:hidden;
+}
 
-    &.loading{
-        overflow-y:hidden;
-    }
+.loading{
+    overflow-y:hidden;
 }
 
 .area{
@@ -56,10 +56,10 @@ body{
 }
 
 #loader{
-    width:100%;
-    height:100%;
-    z-index:6;
-    position:absolute;
+    width:100vw;
+    height:100vh;
+    z-index:10;
+    position:fixed;
     background:#000;
     display:flex;
     justify-content: center;

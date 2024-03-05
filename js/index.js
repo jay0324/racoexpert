@@ -6,6 +6,9 @@
 
     app = {
         init: function(){
+            
+            if(!this.data.develope) $("html,body").scrollTop(0);
+            
             this.loader();
         },
         data: {
@@ -79,10 +82,11 @@
  
         },
         loadStage(){
-            if(!this.data.develope) window.scrollTo(0, 0);
+            if(!this.data.develope) $("html,body").scrollTop(0);
             setTimeout(()=>{
                 this.loadComplete();
             },1000)
+            
             if (ratio > 1) this.stage1();
             this.stage2();
             this.stage3();
@@ -125,7 +129,7 @@
                 }, 'stage6');
             }
 
-            $("body").removeClass('loading');
+            $("html, body").removeClass('loading');
         },
         stage1() {
             gsap.timeline({

@@ -250,6 +250,17 @@
     filter: brightness(0);
   }
 }
+@keyframes flash-light-button {
+  0% {
+    filter: drop-shadow(0 0 0px #00FE9C) brightness(80%);
+  }
+  50% {
+    filter: drop-shadow(0 0 5px #00FE9C) brightness(90%);
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #00FE9C) brightness(80%);
+  }
+}
 html {
   width: 100%;
   overflow-x: hidden;

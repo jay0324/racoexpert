@@ -49,6 +49,38 @@
 .b-index-section-3 .overlay .overlay-content .btn-normal:hover {
   filter: drop-shadow(0 0 5px #00FE9C) brightness(150%);
 }
+.b-index-section-3 .overlay .overlay-content .screen {
+  position: absolute;
+  top: 21.5vw;
+  left: 22.5vw;
+  z-index: 5;
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: 0 0;
+          mask-position: 0 0;
+}
+.b-index-section-3 .overlay .overlay-content .screen:hover img {
+  transform: scale(1.5);
+}
+.b-index-section-3 .overlay .overlay-content .screen:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.b-index-section-3 .overlay .overlay-content .screen img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  transition: transform 1.5s;
+}
 .b-index-section-3 .overlay .overlay-content .pcMachine-wraper {
   display: none;
   position: relative;
@@ -100,6 +132,29 @@
     top: 20.5vw;
   }
 }
+.b-index-section-3 .overlay .overlay-content .pcMachine-wraper .screen {
+  -webkit-mask-image: url(../img/index/pc_mask.svg);
+          mask-image: url(../img/index/pc_mask.svg);
+  top: 34.6vh;
+  left: 37.4vh;
+}
+@media (max-aspect-ratio: 1.5472901169) {
+  .b-index-section-3 .overlay .overlay-content .pcMachine-wraper .screen {
+    top: 22.3vw;
+    left: 24.2vw;
+  }
+}
+.b-index-section-3 .overlay .overlay-content .pcMachine-wraper .screen img {
+  width: 75.2vh;
+}
+@media (max-aspect-ratio: 1.5472901169) {
+  .b-index-section-3 .overlay .overlay-content .pcMachine-wraper .screen img {
+    width: 48.8vw;
+  }
+}
+.b-index-section-3 .overlay .overlay-content .pcMachine-wraper .screen:before {
+  background-image: url(../img/index/screen_shadow.png);
+}
 .b-index-section-3 .overlay .overlay-content .mbMachine-wraper {
   display: none;
   position: relative;
@@ -150,6 +205,32 @@
     top: 51vh;
     right: 17vh;
   }
+}
+.b-index-section-3 .overlay .overlay-content .mbMachine-wraper .screen {
+  -webkit-mask-image: url(../img/index/mb_mask.svg);
+          mask-image: url(../img/index/mb_mask.svg);
+  top: 31.3vw;
+  left: 17.6vw;
+}
+@media (min-aspect-ratio: 0.7276064611) {
+  .b-index-section-3 .overlay .overlay-content .mbMachine-wraper .screen {
+    top: 22.8vh;
+    left: 13vh;
+  }
+}
+.b-index-section-3 .overlay .overlay-content .mbMachine-wraper .screen img {
+  width: 59.2vw;
+}
+@media (min-aspect-ratio: 0.7276064611) {
+  .b-index-section-3 .overlay .overlay-content .mbMachine-wraper .screen img {
+    width: 43vh;
+  }
+}
+.b-index-section-3 .overlay .overlay-content .mbMachine-wraper .screen:before {
+  background: transparent;
+  box-shadow: inset 0 0 10px 10px rgb(0, 0, 0);
+  top: 2%;
+  height: 96%;
 }
 
 .content2 {

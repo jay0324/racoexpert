@@ -1,3 +1,4 @@
+@import 'components/_keyframes.scss';
 
 $pc-ratio: 1456/941;
 $mb-ratio: 991/1362;
@@ -44,6 +45,14 @@ $mb-ratio: 991/1362;
 
             .pannel-wraper{
                 transition: opacity 1s;
+
+                &:before,
+                &:after{
+                    content:'';
+                    position:absolute;
+                    z-index:4;
+                    opacity:0.8;
+                }
             }
 
             .btn-normal{
@@ -98,6 +107,34 @@ $mb-ratio: 991/1362;
 
                 @media (min-aspect-ratio: 1/1){
                     display:block;
+                }
+
+                &:before, &:after{
+                    width:1.2vw;
+                    height:0.5vw;
+                    filter: brightness(0);
+                    animation: flash-light 1s linear 1s infinite;
+                }
+
+                &:before{
+                    background-color:rgb(183, 126, 19);
+                    animation-delay: 0.5s;
+                    top:45.3vh;
+                    left:27.9vh;
+                    @media (max-aspect-ratio: $pc-ratio){
+                        top:29.3vw;
+                        left:18vw;
+                    }
+                }
+
+                &:after{
+                    background-color:rgb(193, 3, 3);
+                    top:46.8vh;
+                    left:27.9vh;
+                    @media (max-aspect-ratio: $pc-ratio){
+                        top:30.3vw;
+                        left:18vw;
+                    }
                 }
 
                 .pcMachine{
@@ -165,6 +202,39 @@ $mb-ratio: 991/1362;
                 z-index:0;
                 @media (max-aspect-ratio: 1/1){
                     display:block;
+                }
+
+                &:before, &:after{
+                    border-radius: 50%;
+                    filter: brightness(0);
+                    animation: flash-light 1s linear 1s infinite;
+                    width:1.3vw;
+                    height:1.3vw;
+                    @media (min-aspect-ratio: $mb-ratio){
+                        top: 66.4vh;
+                        left: 29.8vh;
+                    }
+                }
+
+                &:before{
+                    background-color:rgb(183, 126, 19);
+                    animation-delay: 0.5s;
+                    top:91.5vw;
+                    left:40.8vw;
+                    @media (min-aspect-ratio: $mb-ratio){
+                        top: 66.4vh;
+                        left: 29.8vh;
+                    }
+                }
+
+                &:after{
+                    background-color:rgb(193, 3, 3);
+                    top:91.5vw;
+                    left:55.8vw;
+                    @media (min-aspect-ratio: $mb-ratio){
+                        top: 66.5vh;
+                        left: 40.4vh;
+                    }
                 }
 
                 .mbMachine{

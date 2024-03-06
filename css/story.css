@@ -238,6 +238,18 @@
     opacity: 0;
   }
 }
+@keyframes flash-light {
+  0% {
+    filter: brightness(0);
+  }
+  50% {
+    filter: brightness(90%);
+    box-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    filter: brightness(0);
+  }
+}
 html {
   width: 100%;
   overflow-x: hidden;

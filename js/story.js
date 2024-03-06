@@ -5,8 +5,7 @@
     var scaleRatio = window.innerWidth / 1920;
 
     app = {
-        init: function(){
-            
+        init: async function(){
             if(!this.data.develope) {
                 setTimeout(()=>{
                     $("html,body").scrollTop(0);
@@ -41,6 +40,8 @@
         },
         loader() {
             const xhr = [];
+            $("#checking").addClass('hide');
+            $("#process").removeClass('hide');
             $("#total").text(this.data.files.length);
             $("#complete").text(this.data.loaded.length);
             var color = 'rgba(97, 236, 120, 1)';
@@ -135,7 +136,6 @@
                     duration: 2 
                 }, 'stage6');
             }
-
             $("html, body").removeClass('loading');
         },
         stage1() {

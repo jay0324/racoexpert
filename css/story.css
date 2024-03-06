@@ -325,6 +325,9 @@ body {
 #loader #meter {
   text-align: center;
 }
+#loader #meter .hide {
+  display: none;
+}
 
 #mask {
   position: fixed;

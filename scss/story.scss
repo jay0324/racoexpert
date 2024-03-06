@@ -66,6 +66,10 @@ body{
     align-items: center;
     #meter{
         text-align: center;
+
+        .hide{
+            display:none;
+        }
     }
 }
 

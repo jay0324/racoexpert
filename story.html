@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="css/story.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script src="js/ShaderProgram.js"></script>
+    <script src="js/story.js" async></script>
 </head>
 <body class="loading">
 
@@ -17,7 +24,10 @@
         <div id="meter">
             <canvas width="100" height="100" id="circle"></canvas>
             <div id="tasks">
-                <span id="complete">0</span>/</span><span id="total">0</span> Resources Loaded
+                <div id="checking">Checking Resources...</div>
+                <div id="process" class="hide">
+                    <span id="complete">0</span>/</span><span id="total">0</span> Resources Loaded
+                </div>
             </div>
         </div>
     </div>
@@ -150,12 +160,5 @@
         <div id="logo"><img src="img/storylogo.svg"></div>
         <div id="backBTN"><a href="index.html">GO</a></div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <script src="js/ShaderProgram.js"></script>
-    <script src="js/story.js" async></script>
 </body>
 </html>
